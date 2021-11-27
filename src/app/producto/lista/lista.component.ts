@@ -37,4 +37,17 @@ export class ListaComponent implements OnInit {
     this.router.navigate(['productos/editar'])
   }
 
+  borrarProducto(producto: Producto){
+    console.log('Borrar producto');
+    this.productoServicio.borrarProducto(producto).subscribe(data =>{
+      alert('Producto eliminado con exito');
+      this.productoServicio
+    .getAllProductos()
+    .subscribe(data => {
+      console.log('obtuvo productos del backend', data);
+      this.productos = data;
+    });
+    });
+  }
+
 }

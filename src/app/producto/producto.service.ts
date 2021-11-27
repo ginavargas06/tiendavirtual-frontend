@@ -26,4 +26,8 @@ export class ProductoService {
   getById(id: any) {
     return this.http.get<Producto[]>(this.url + '/' + id);
   }
+
+  borrarProducto(producto:Producto){
+    return this.http.delete<Producto>(this.url  + '/' + producto._id);
+  }
 }

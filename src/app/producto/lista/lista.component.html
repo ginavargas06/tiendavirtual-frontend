@@ -31,10 +31,21 @@
             <td>{{ producto.unidad }}</td>
             <td>{{ producto.usuario }}</td>
             <td>
-              <button (click)="editarProducto(producto)" class="btn btn-warning red lighten-2"
-              style="margin-right:10px;">Editar</button>
+              <div class="row">
+                <div class="col s6">
+                  <button (click)="editarProducto(producto)"
+                class="btn btn-small red lighten-2"
+                style="margin-right:10px;">Editar</button>
 
-          <!--button (click)='Delete(producto)'class=btn btn-danger">delete</button-->
+                </div>
+                <div class="col s6">
+                  <button (click)="borrarProducto(producto)"
+                class="btn btn-small red lighten-2">Borrar</button>
+                </div>
+
+
+
+            </div>
             </td>
           </tr>
         </tbody>
