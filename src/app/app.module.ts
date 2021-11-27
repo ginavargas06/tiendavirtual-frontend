@@ -9,12 +9,14 @@ import { MatMenuModule  } from '@angular/material/menu'
 import { MaterialModule } from './material.module';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { AddComponent } from './producto/add/add.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaComponent
+    ListaComponent,
+    AddComponent
   ],
   imports: [
     MatMenuModule,

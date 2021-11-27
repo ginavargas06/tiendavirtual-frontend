@@ -1,39 +1,42 @@
-<div class="container">
-<div class="card"> </div>
-<div class="card-header">
-  <h3>Productos {{productos.length}}</h3>
-</div>
-<div class="card-body">
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>id</th>
-        <th>categoria</th>
-        <th>fechaVencimiento</th>
-        <th>nombreProducto</th>
-        <th>precio</th>
-        <th>precioUnitario</th>
-        <th>proveedor</th>
-        <th>unidad</th>
-        <th>usuario</th>
-        </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor = "let producto of productos">
-        <td>{{producto.id}}</td>
-        <td>{{producto.categoria}}</td>
-        <td>{{producto.fechaVencimiento}}</td>
-        <td>{{producto.nombreProducto}}</td>
-        <td>{{producto.precio}}</td>
-        <td>{{producto.precioUnitario}}</td>
-        <td>{{producto.proveedor}}</td>
-        <td>{{producto.unidad}}</td>
-        <td>{{producto.usuario}}</td>
-        <!--td>
+<div class="row">
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">Productos</span>
+      <div class="card-action">
+        <button (click)="crearProducto()" class= "waves-effect waves-light btn red lighten-2" >
+          Crear
+        </button>
+      </div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Categoria</th>
+            <th>Fecha Vencimiento</th>
+            <th>Nombre Producto</th>
+            <th>Precio</th>
+            <th>Precio Unitario</th>
+            <th>Proveedor</th>
+            <th>Unidad</th>
+            <th>Usuario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let producto of productos">
+            <td>{{ producto.categoria }}</td>
+            <td>{{ producto.fechaVencimiento }}</td>
+            <td>{{ producto.nombreProducto }}</td>
+            <td>{{ producto.precio }}</td>
+            <td>{{ producto.precioUnitario }}</td>
+            <td>{{ producto.proveedor }}</td>
+            <td>{{ producto.unidad }}</td>
+            <td>{{ producto.usuario }}</td>
+            <!--td>
           <button (click)='Edit(producto)'class="btn btn-warning" style="margin-right:10px;">edit</button>
           <button (click)='Delete(producto)'class=btn btn-danger">delete</button>
         </td-->
-      </tr>
-      </tbody>
-  </table>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
+</div>

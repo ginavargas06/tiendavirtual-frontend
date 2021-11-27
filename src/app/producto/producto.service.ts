@@ -13,4 +13,9 @@ export class ProductoService {
   getAllProductos() {
     return this.http.get<Producto[]>(this.url);
   }
+
+  guardarProducto (producto: Producto) {
+    console.log("Guardando producto", producto);
+    return this.http.post<Producto>(this.url, producto);
+  }
 }
