@@ -10,13 +10,15 @@ import { MaterialModule } from './material.module';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { AddComponent } from './producto/add/add.component';
+import { EditComponent } from './Producto/edit/edit.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaComponent,
-    AddComponent
+    AddComponent,
+    EditComponent
   ],
   imports: [
     MatMenuModule,

@@ -10,6 +10,7 @@ import { Producto } from './producto';
 })
 export class ListaComponent implements OnInit {
   productos!: Producto[];
+  producto: Producto = new Producto();
 
   constructor(private productoServicio: ProductoService, private router: Router) { }
 
@@ -28,6 +29,12 @@ export class ListaComponent implements OnInit {
     console.log('Crear producto');
     this.router.navigate(['productos/crear']);
 
+  }
+
+  editarProducto(producto: Producto){
+    console.log('Editar producto');
+    localStorage.setItem("productoEditar", producto._id);
+    this.router.navigate(['productos/editar'])
   }
 
 }
