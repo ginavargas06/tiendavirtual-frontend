@@ -13,11 +13,12 @@
             <th>Categoria</th>
             <th>Fecha Vencimiento</th>
             <th>Nombre Producto</th>
-            <th>Precio</th>
-            <th>Precio Unitario</th>
+            <th>Costo</th>
+            <th>Precio Venta</th>
             <th>Proveedor</th>
             <th>Unidad</th>
             <th>Usuario</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -25,8 +26,8 @@
             <td>{{ producto.categoria }}</td>
             <td>{{ producto.fechaVencimiento }}</td>
             <td>{{ producto.nombreProducto }}</td>
-            <td>{{ producto.precio }}</td>
-            <td>{{ producto.precioUnitario }}</td>
+            <td>{{ producto.costo }}</td>
+            <td>{{ producto.precioVenta }}</td>
             <td>{{ producto.proveedor }}</td>
             <td>{{ producto.unidad }}</td>
             <td>{{ producto.usuario }}</td>
@@ -42,9 +43,6 @@
                   <button (click)="borrarProducto(producto)"
                 class="btn btn-small red lighten-2">Borrar</button>
                 </div>
-
-
-
             </div>
             </td>
           </tr>
