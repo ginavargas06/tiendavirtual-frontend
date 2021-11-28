@@ -10,7 +10,7 @@ import { MaterialModule } from './material.module';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { AddComponent } from './producto/add/add.component';
-import { EditComponent } from './Producto/edit/edit.component';
+import { EditComponent } from './producto/edit/edit.component';
 
 
 @NgModule({
