@@ -12,13 +12,20 @@ import {HttpClientModule} from '@angular/common/http';
 import { AddComponent } from './producto/add/add.component';
 import { EditComponent } from './producto/edit/edit.component';
 
+import { AddComponentFactura } from './factura/add/add.component';
+import { ListaComponentFactura } from './factura/lista/lista.component';
+import { EditComponentFactura} from './factura/edit/edit.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaComponent,
     AddComponent,
-    EditComponent
+    EditComponent,
+    ListaComponentFactura,
+    EditComponentFactura,
+    AddComponentFactura
   ],
   imports: [
     MatMenuModule,

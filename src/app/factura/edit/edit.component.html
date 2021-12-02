@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Editar Factura</span>
+        <div class="divider"></div>
+        <form action="">
+          <div class="row">
+            <div class="form-group">
+              <label for="">Tendero:</label>
+              <input
+                [(ngModel)]="factura.tendero"
+                name="tendero"
+                type="text"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="">Código de factura:</label>
+              <input name="codigoFactura" type="text" [(ngModel)]="factura.codigoFactura"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="">Método de pago:</label>
+              <input name="metodo_pago" type="text" [(ngModel)]="factura.metodo_pago" />
+            </div>
+          </div>
+
+          
+          <div class="row">
+            <div class="form-group" >
+              <label for=""> Productos:</label>
+              <input *ngFor="let articulo of factura.producto.articulos" name="producto" type="text" [(ngModel)]="factura.producto.articulos" />
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="form-group">
+              <label for="">Cantidad vendida:</label>
+              <input name="cantidad_vendida" type="text" [(ngModel)]="factura.producto.cantidad"/>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="form-group">
+              <label for="">Venta Total:</label>
+              <input name="total_venta" type="text" [(ngModel)]="factura.total_venta"/>
+            </div>
+          </div>
+
+        </form>
+        <div class="card-action center">
+          <button (click)="guardar()" class= "waves-effect waves-light btn red lighten-2" >
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Agregar Factura</span>
+        <div class="divider"></div>
+        <form action="">
+          <div class="row">
+            <div class="form-group">
+              <label for="">Tendero:</label>
+              <input
+                [(ngModel)]="factura.tendero"
+                name="tendero"
+                type="text"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="">Código de factura:</label>
+              <input name="código" type="text" [(ngModel)]="factura.codigoFactura"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <label for="">Método de pago:</label>
+              <input name="metodoPago" type="text" [(ngModel)]="factura.metodo_pago" />
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="form-group">
+              <label for="">Productos:</label>
+              <input name="productos" type="text" [(ngModel)]="factura.producto" />
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="form-group">
+              <label for="">Cantidad vendida:</label>
+              <input name="cantidad" type="text" [(ngModel)]="factura.cantidad_vendida" />
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="form-group">
+              <label for="">Venta Total:</label>
+              <input name="ventaTotal" type="text" [(ngModel)]="factura.total_venta"/>
+            </div>
+          </div>
+
+        </form>
+        <div class="card-action center">
+          <button (click)="guardar()" class= "waves-effect waves-light btn red lighten-2" >
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

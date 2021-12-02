@@ -16,6 +16,9 @@ export class AppComponent {
 
   }
 
+  listarFacturas() {
+    this.router.navigate(['facturas']);
 
+  }
 
 }
