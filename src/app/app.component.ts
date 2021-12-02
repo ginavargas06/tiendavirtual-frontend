@@ -21,4 +21,8 @@ export class AppComponent {
 
   }
 
+  listarUsuarios(){
+    this.router.navigate(['usuarios']);
+  }
+
 }

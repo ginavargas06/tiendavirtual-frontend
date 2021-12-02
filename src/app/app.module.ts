@@ -16,6 +16,11 @@ import { AddComponentFactura } from './factura/add/add.component';
 import { ListaComponentFactura } from './factura/lista/lista.component';
 import { EditComponentFactura} from './factura/edit/edit.component';
 
+import { AddComponentUsuario } from './usuario/add/add.component';
+import { ListaComponentUsuario } from './usuario/lista/lista.component';
+import { EditComponentUsuario} from './usuario/edit/edit.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +30,10 @@ import { EditComponentFactura} from './factura/edit/edit.component';
     EditComponent,
     ListaComponentFactura,
     EditComponentFactura,
-    AddComponentFactura
+    AddComponentFactura,
+    AddComponentUsuario,
+    ListaComponentUsuario,
+    EditComponentUsuario
   ],
   imports: [
     MatMenuModule,

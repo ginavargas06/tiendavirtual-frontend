@@ -8,6 +8,10 @@ import { AddComponentFactura } from './factura/add/add.component';
 import { EditComponentFactura } from './factura/edit/edit.component';
 import { ListaComponentFactura } from './factura/lista/lista.component';
 
+import { AddComponentUsuario } from './usuario/add/add.component';
+import { EditComponentUsuario } from './usuario/edit/edit.component';
+import { ListaComponentUsuario } from './usuario/lista/lista.component';
+
 const routes: Routes = [
   {
     path: 'productos', component: ListaComponent
@@ -21,6 +25,12 @@ const routes: Routes = [
     path: 'facturas/crear', component: AddComponentFactura
   },{
     path:'facturas/editar',component: EditComponentFactura
+  },{
+    path: 'usuarios', component: ListaComponentUsuario
+  },{
+    path: 'usuarios/crear', component: AddComponentUsuario
+  },{
+    path: 'usuarios/editar', component: EditComponentUsuario
   }
 ];
 

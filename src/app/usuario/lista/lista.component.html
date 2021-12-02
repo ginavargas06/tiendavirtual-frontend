@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Usuarios</span>
+        <div class="card-action">
+          <button (click)="crearUsuario()" class= "waves-effect waves-light btn red lighten-2" >
+            Crear
+          </button>
+        </div>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+            <th>Nombre:</th>
+            <th>Email:</th>
+            <th>Contraseña</th>
+            <th>Tipo de tienda</th>
+            <th>Identificación</th>
+            <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let usuario of usuarios">
+              <td>{{ usuario.nombreUsuario }}</td>
+              <td>{{ usuario.email }}</td>
+              <td>{{ usuario.contrasena }}</td>
+              <td>{{ usuario.tipoTienda }}</td>
+              <td>{{ usuario.identificacion }}</td>
+              <td>
+                <div class="row">
+                  <div class="col s6">
+                    <button (click)="editarUsuario(usuario)"
+                  class="btn btn-small red lighten-2"
+                  style="margin-right:10px;">Editar</button>
+  
+                  </div>
+                  <div class="col s6">
+                    <button (click)="borrarUsuario(usuario)"
+                  class="btn btn-small red lighten-2">Borrar</button>
+                  </div>
+              </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
