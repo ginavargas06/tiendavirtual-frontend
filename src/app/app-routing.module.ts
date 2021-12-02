@@ -21,7 +21,11 @@ const routes: Routes = [
     path: 'facturas/crear', component: AddComponentFactura
   },{
     path:'facturas/editar',component: EditComponentFactura
-  }
+  },{
+    path:'inventario/crear',component: AddComponent
+  },{
+    path:'inventario/editar',component: EditComponent
+  },
 ];
 
 @NgModule({
