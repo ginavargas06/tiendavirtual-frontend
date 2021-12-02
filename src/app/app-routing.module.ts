@@ -32,6 +32,10 @@ const routes: Routes = [
   },{
     path: 'usuarios/editar', component: EditComponentUsuario
   }
+    path:'inventario/crear',component: AddComponent
+  },{
+    path:'inventario/editar',component: EditComponent
+  },
 ];
 
 @NgModule({
